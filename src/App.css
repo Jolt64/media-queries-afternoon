@@ -1,33 +1,125 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.App {
+  text-align: center;
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.7))
+    ),
+    url("https://images.pexels.com/photos/860379/pexels-photo-860379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+button {
+  background: none;
+  border: none;
+  color: #f8f9fa;
+  font-size: 16px;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #212529;
+  min-height: 55px;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: calc(10px + 2vmin);
+}
+
+.App-header div {
+  margin: 0px 20px 0px 20px;
+}
+
+.menuButton {
+  height: 40px;
+  width: 17%;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #fed136;
+}
+
+.menuBar {
+  display: none;
+}
+
+.menuText {
+  color: #fed136;
+}
+
+.landingSection {
+  height: 500px;
+  display: flex;
+  align-content: center;
+  justify-items: center;
+}
+
+.greetingBlock {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.welcomeSpan {
   color: white;
+  font-weight: 700;
+  font-size: 25px;
+  margin: 0px;
 }
 
-.App-link {
-  color: #61dafb;
+.greetingSpan {
+  color: white;
+  font-weight: 900;
+  font-size: 50px;
+  padding: 20px;
+  margin: 0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.tellMeMoreButton {
+  height: 80px;
+  width: 55%;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #fed136;
+  font-weight: 800;
+  font-size: 25px;
+  margin: 0px;
+}
+
+@media (min-width: 500px) {
+  .menuButton {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+  .menuBar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5px;
+  }
+  .menuBar button {
+    font-size: 12px;
+  }
+  .App-header {
+    background: none;
   }
 }
